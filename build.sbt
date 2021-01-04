@@ -3,6 +3,8 @@ name := "playground.github-actions.sbt"
 val scalaVer = "2.13.3"
 scalaVersion := scalaVer
 
+packageName in Universal := name.value
+
 fork in (Compile, run) := true
 
 val commonLib = Seq(
